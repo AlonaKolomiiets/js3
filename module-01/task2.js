@@ -14,10 +14,16 @@ const ordered = 50;
 const value = prompt("Введите количество товаров");
 const valueNumber = Number(value);
 
-if (isNaN(valueNumber) || valueNumber === 0) {
-  alert("Введите количество!");
-} else if (valueNumber <= total) {
-  alert("Заказ оформлен, с вами свяжется менеджер");
-} else {
-  alert("На складе недостаточно товаров!");
-}
+//if (isNaN(valueNumber) || valueNumber === 0) {
+//alert("Введите количество!");
+//} else if (valueNumber <= total) {
+// alert("Заказ оформлен, с вами свяжется менеджер");
+//} else {
+// alert("На складе недостаточно товаров!");
+//}
+
+isNaN(valueNumber) || valueNumber === 0
+  ? alert("Введите количество!")
+  : valueNumber <= total
+  ? alert("Заказ оформлен, с вами свяжется менеджер")
+  : alert("На складе недостаточно товаров!");

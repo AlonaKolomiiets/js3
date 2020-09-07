@@ -14,12 +14,19 @@ const ADMIN_PASSWORD = "jqueryismyjam";
 let message;
 const value = prompt("Enter password");
 
-if (value === null) {
-  message = "Отменено пользователем!";
-} else if (value === "jqueryismyjam") {
-  message = "Добро пожаловать!";
-} else {
-  message = "Доступ запрещен, неверный пароль!";
-}
+//if (value === null) {
+//message = "Отменено пользователем!";
+//} else if (value === "jqueryismyjam") {
+//message = "Добро пожаловать!";
+//} else {
+//message = "Доступ запрещен, неверный пароль!";
+//}
 
+//console.log(alert(message));
+
+value === null
+  ? (message = "Отменено пользователем!")
+  : value === "jqueryismyjam"
+  ? (message = "Добро пожаловать!")
+  : (message = "Доступ запрещен, неверный пароль!");
 console.log(alert(message));
