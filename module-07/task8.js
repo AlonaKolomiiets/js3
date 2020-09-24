@@ -29,14 +29,9 @@ function createBoxes() {
   let acc = 30;
   for (let i = 0; i < input.value; i += 1) {
     let div = document.createElement("div");
-    if (i === 0) {
-      div.style.width = `${acc}px`;
-      div.style.height = `${acc}px`;
-    } else {
-      acc += 10;
-    }
     div.style.width = `${acc}px`;
     div.style.height = `${acc}px`;
+    acc += 10;
     div.style.background = `rgb(${Math.floor(Math.random() * 255)},${Math.floor(
       Math.random() * 255
     )},${Math.floor(Math.random() * 255)})`;
